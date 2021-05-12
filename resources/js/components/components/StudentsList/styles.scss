@@ -1,0 +1,27 @@
+.ui.list.StudentsList {
+  .item {
+    .content {
+      .description {
+        display: flex;
+        justify-content: space-between;
+
+        .actions {
+          width: 50px;
+          display: flex;
+          justify-content: space-between;
+
+          .update {
+            color: #ff9800;
+            &.active {
+              color: #1de9b6;
+            }
+          }
+
+          .delete {
+            color: darkred;
+          }
+        }
+      }
+    }
+  }
+}

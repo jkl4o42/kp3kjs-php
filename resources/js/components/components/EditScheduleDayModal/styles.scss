@@ -1,0 +1,41 @@
+.ui.modal.EditScheduleDayModal {
+  .content {
+
+    h5 {
+      text-align: center;
+      color: red;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+
+      .lectureList {
+        position: relative;
+        width: 300px;
+        margin: 10px 0;
+
+        span:first-child {
+          margin-right: 5px;
+        }
+
+        i {
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+
+          &:hover {
+            color: darkred;
+          }
+        }
+      }
+    }
+  }
+}

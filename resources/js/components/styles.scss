@@ -1,0 +1,72 @@
+#root, .App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  .page {
+    flex: 1 1 auto;
+    padding: 50px 0;
+    overflow-y: scroll;
+
+    .ui.container {
+      &.StudentsPage, &.LecturesPage {
+        &>span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 25px;
+
+          .icon {
+            font-size: 26px;
+            cursor: pointer;
+
+            &:hover {
+              color: #ff9800;
+            }
+          }
+        }
+      }
+
+      &.SchedulePage {
+        .ScheduleList {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+      }
+
+      &.HomePage {
+        display: flex;
+        flex-direction: column;
+
+        .calendar {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          span {
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
